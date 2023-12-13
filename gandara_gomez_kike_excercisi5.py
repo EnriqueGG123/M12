@@ -29,26 +29,26 @@ while True:
 
 separador("5.3")
 
-user_word = input("Ingresa una palabra: ")
-user_word = user_word.upper()
+palabra = input("Ingresa una palabra: ")
+palabra = palabra.upper()
 
-for letter in user_word:
-    if letter in ['A', 'E', 'I', 'O', 'U']:
+for letra in palabra:
+    if letra in ['A', 'E', 'I', 'O', 'U']:
         continue
 
-    print(letter)
+    print(letra)
 
 separador("5.4")
 
-user_word = input("Ingresa una palabra: ")
-user_word = user_word.upper()
+palabra = input("Ingresa una palabra: ")
+palabra = palabra.upper()
 nueva_palabra = ""
 
-for letter in user_word:
-    if letter in ['A', 'E', 'I', 'O', 'U']:
+for letra in palabra:
+    if letra in ['A', 'E', 'I', 'O', 'U']:
         continue
 
-    nueva_palabra = nueva_palabra + letter
+    nueva_palabra = nueva_palabra + letra
 
 print(nueva_palabra)
 
@@ -56,11 +56,11 @@ separador("5.5")
 
 invertido = float(input("Ingresa la cantidad a invertir: "))
 interes = float(input("Ingresa la tasa de interés anual (en porcentaje): "))
-num_anios = int(input("Ingresa el número de años de la inversión: "))
+num_años = int(input("Ingresa el número de años de la inversión: "))
 
 decimal = interes / 100
 
-for año in range(1, num_anios + 1):
+for año in range(1, num_años + 1):
     capital_obtenido = invertido * (1 + decimal) ** año
     print(f"Año {año}: Capital obtenido = {capital_obtenido:.2f}")
 
