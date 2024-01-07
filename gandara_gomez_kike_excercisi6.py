@@ -55,3 +55,21 @@ if "Stu Sutcliffe" and "Pete Best" in beatles:
 beatles.insert(0, "Ringo Starr")
 
 print(beatles)
+
+separador("6.3")
+
+# Ordenamiento burbuja
+lista = []
+while True:
+    value = input("Elije un valor (fin para terminar de elegir): ")
+    if value.lower() == 'fin':
+        break
+    lista.append(int(value))
+
+for i in range(len(lista) - 1):
+    for j in range(len(lista) - 1):
+        if lista[j] > lista[j + 1]:
+            lista[j], lista[j + 1] = lista[j + 1], lista[j]
+
+print("Lista ordenada:", lista)
+
