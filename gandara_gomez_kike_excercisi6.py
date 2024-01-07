@@ -73,3 +73,15 @@ for i in range(len(lista) - 1):
 
 print("Lista ordenada:", lista)
 
+separador("6.4")
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+lista_sin_dups = []
+
+for numero in my_list:
+    if (numero not in lista_sin_dups):
+        lista_sin_dups.append(numero)
+
+print("La lista con elementos únicos:")
+print(lista_sin_dups)
+
