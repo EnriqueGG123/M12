@@ -109,3 +109,11 @@ for asignatura in asignaturas:
 print("Asignaturas que tienes que repetir:")
 print(notas)
 
+separador("6.7")
+
+palabra = input("Elije una palabra: ")
+
+if palabra.lower() == palabra.lower()[::-1]:
+    print("ES palíndromo")
+else:
+    print("NO es palíndromo")
