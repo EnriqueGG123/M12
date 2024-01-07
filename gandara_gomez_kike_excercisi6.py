@@ -22,7 +22,7 @@ while c0 != 1:
 
 print(f'Para llegar a 1 se han necesitado {pasos} pasos!')
 
-separador("6.2")
+separador("Escenario 1")
 
 hat_list = [1, 2, 3, 4, 5]
 
@@ -33,3 +33,6 @@ hat_list.pop()
 
 print("La lista mide:", len(hat_list))
 print(hat_list)
+
+separador("6.2")
+
