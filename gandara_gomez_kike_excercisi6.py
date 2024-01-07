@@ -36,3 +36,22 @@ print(hat_list)
 
 separador("6.2")
 
+beatles = []
+
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+
+print("Añade a la lista a Stu Sutcliffe, y Pete Best.")
+
+for _ in range(2):
+    miembro = input("Añade a un miembro: ")
+    beatles.append(miembro)
+
+if "Stu Sutcliffe" and "Pete Best" in beatles:
+    del beatles[beatles.index("Stu Sutcliffe")]
+    del beatles[beatles.index("Pete Best")]
+
+beatles.insert(0, "Ringo Starr")
+
+print(beatles)
