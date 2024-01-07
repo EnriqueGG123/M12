@@ -96,3 +96,16 @@ for _ in range(6):
 numeros_de_lote.sort()
 print("Numeros ganadores:", numeros_de_lote)
 
+separador("6.6")
+
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+notas = []
+
+for asignatura in asignaturas:
+    nota = float(input(f"Nota de {asignatura}: "))
+    if nota < 5.0:
+        notas.append(asignatura)
+
+print("Asignaturas que tienes que repetir:")
+print(notas)
+
