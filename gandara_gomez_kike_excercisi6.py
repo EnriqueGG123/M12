@@ -24,3 +24,12 @@ print(f'Para llegar a 1 se han necesitado {pasos} pasos!')
 
 separador("6.2")
 
+hat_list = [1, 2, 3, 4, 5]
+
+numero = int(input("Elije un numero para remplazar el central de la lista: "))
+hat_list[len(hat_list)//2] = numero
+
+hat_list.pop()
+
+print("La lista mide:", len(hat_list))
+print(hat_list)
