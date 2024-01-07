@@ -85,3 +85,14 @@ for numero in my_list:
 print("La lista con elementos únicos:")
 print(lista_sin_dups)
 
+separador("6.5")
+
+numeros_de_lote = []
+
+for _ in range(6):
+    numero = int(input("Elije un número ganador de la loteria: "))
+    numeros_de_lote.append(numero)
+
+numeros_de_lote.sort()
+print("Numeros ganadores:", numeros_de_lote)
+
