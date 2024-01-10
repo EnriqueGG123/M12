@@ -1,4 +1,5 @@
 import calendar
+import math
 
 def separador(exercici):
     print("#" * 25)
@@ -78,3 +79,38 @@ def miles_gallon_to_liters_100km(miles):
 print(liters_100km_to_miles_gallon(3.9))
 print(liters_100km_to_miles_gallon(7.5))
 print(liters_100km_to_miles_gallon(10.))
+
+separador("7.6")
+
+precio_factura = int(input("Cuanto es la factura?: "))
+iva = 21
+
+def factura(precio):
+    return precio * (iva / 100 + 1)
+
+print("La factura total sera: ", factura(precio_factura))
+
+separador("7.7")
+
+def calc_area(r):
+    area = math.pi * (r ** 2)
+    return area
+
+print(calc_area(1))
+
+def calc_volumen_cyl(h, r):
+    v = calc_area(r) * h
+    return v
+
+print(calc_volumen_cyl(2, 1))
+
+separador("7.8")
+
+def dec_a_bin(numero):
+      return format(numero ,"b")
+
+def bin_a_dec(numero):
+      return int(numero, 2)
+
+print(dec_a_bin(5))
+print(bin_a_dec("101"))
